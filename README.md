@@ -109,7 +109,7 @@ The pipeline is encapsulated in a single class:
 
 This modular design makes the code easy to test, extend, and maintain.
 
----
+---  
 
 ## Usage
 
@@ -118,8 +118,8 @@ from data_pipeline import DataPipeline
 
 pipeline = DataPipeline()
 pipeline.process_pipeline(
-    input_csv="input/stock_data.csv",
-    output_dir="output"
+    input_csv="input_files/input.csv",
+    output_dir="output_files"
 )
 ```
 
