@@ -76,34 +76,6 @@ AAPL, AMD, AMZN, AVGO, CSCO, MSFT, NFLX, PEP, TMUS, TSLA
 
 ---
 
-## Technical Indicator Definitions
-
-### Simple Moving Average (SMA)
-
-[
-\text{SMA}_N = \frac{\sum \text{Close Prices over N periods}}{N}
-]
-
-Calculated using **monthly closing prices**.
-
----
-
-### Exponential Moving Average (EMA)
-
-* Multiplier:
-  [
-  \alpha = \frac{2}{N + 1}
-  ]
-
-* Recursive formula:
-  [
-  \text{EMA}*t = (\text{Close}*t - \text{EMA}*{t-1}) \times \alpha + \text{EMA}*{t-1}
-  ]
-
-Implemented using Pandas `ewm(..., adjust=False)` to match the standard trading EMA definition.
-
----
-
 ## Project Structure
 
 ```text
