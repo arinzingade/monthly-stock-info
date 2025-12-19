@@ -76,21 +76,6 @@ AAPL, AMD, AMZN, AVGO, CSCO, MSFT, NFLX, PEP, TMUS, TSLA
 
 ---
 
-## Project Structure
-
-```text
-data_pipeline.py
-README.md
-input/
-  └── stock_data.csv
-output/
-  └── result_AAPL.csv
-  └── result_AMD.csv
-  └── ...
-```
-
----
-
 ## Code Architecture
 
 The pipeline is encapsulated in a single class:
